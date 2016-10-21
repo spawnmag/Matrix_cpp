@@ -1,5 +1,4 @@
-
-#include <cstdlib> // для system
+#include <cstdlib> //
 #include <string>
 #include <windows.h>
 #include <iostream>
@@ -17,11 +16,11 @@ int main()
 	SetConsoleTextAttribute(hConsole, k);
 	const char * ar[] = { "0", "1", };
 	std::string  str = "";
-	std::cout << "\n                  " << "[ MATRIX ]" <<" by =Sir Alex= \n" <<std::endl;
+	std::cout << "\n                  " << "[ MATRIX ]" << " by =Sir Alex= \n" << std::endl;
 	system("pause");
 	while (i < 100) {
 		for (int j = 0; j < 100; j++) str += ar[rand() % (sizeof ar / sizeof(char *))];
-		std::cout <<"     "<< str << std::endl;
+		std::cout << "     " << str << std::endl;
 		str = "";
 		Sleep(95);
 		i++;
@@ -46,4 +45,3 @@ int main()
 	system("pause");
 	return 0;
 }
-// не благодари =)
